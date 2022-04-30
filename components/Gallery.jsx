@@ -53,9 +53,9 @@ const Gallery = () => {
         spaceBetween={20}
         modules={[Autoplay]}
         ref={sliderRef}
-        speed={2000}
+        speed={1500}
         autoplay={{
-          delay: 3000,
+          delay: 2500,
           disableOnInteraction: true,
         }}
       >
