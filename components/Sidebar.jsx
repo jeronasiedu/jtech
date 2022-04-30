@@ -1,11 +1,15 @@
 import Link from 'next/link'
+import { useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-const Sidebar = ({ openSidebar }) => {
+import { useClickOutside } from '../utils/hooks'
+const Sidebar = ({ openSidebar, closeSidebar }) => {
   const links = [
     { title: 'About', url: '/' },
     { title: 'Blog', url: '/' },
     { title: 'Testimonials', url: '/' },
   ]
+  const sidebarRef = useRef()
+  useClickOutside(sidebarRef, closeSidebar)
   return (
     <>
       <AnimatePresence>
@@ -24,6 +28,7 @@ const Sidebar = ({ openSidebar }) => {
               opacity: 1,
             }}
             className="fixed top-0 left-0 w-3/4 max-w-sm min-h-screen p-3 py-6 bg-white border-r custom-shadow dark:border-gray-600 dark:bg-[#161821]"
+            ref={sidebarRef}
           >
             <nav className="flex flex-col space-y-4">
               <Link href="/">

@@ -3,7 +3,7 @@ import React from 'react'
 const Gallery = () => {
   return (
     <article>
-      <div className="flex flex-col items-center justify-center max-w-3xl py-16 mx-auto space-y-8 ">
+      <div className="flex flex-col items-center justify-center max-w-3xl px-4 py-16 mx-auto space-y-8 ">
         <h1 className="text-4xl font-bold text-center md:text-5xl lg:text-6xl">
           From rough design files, to {''}
           <span className="text-blue-600 ">powerful products</span>

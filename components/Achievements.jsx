@@ -51,7 +51,7 @@ const Achievements = () => {
       variants={sectionVariant}
       initial="initial"
       whileInView="animate"
-      className="grid grid-cols-2 gap-6 px-2 pb-16 mx-auto lg:grid-cols-4 max-w-7xl"
+      className="grid grid-cols-2 gap-4 px-3 pb-16 mx-auto lg:gap-6 lg:grid-cols-4 max-w-7xl"
     >
       {achieve.map((item, idx) => (
         <motion.div
@@ -60,7 +60,7 @@ const Achievements = () => {
           initial="initial"
           custom={idx}
           animate="animate"
-          className="flex flex-col items-center justify-center py-6 space-y-2 bg-white rounded-sm shadow-lg dark:bg-slate-700 "
+          className="flex flex-col items-center justify-center py-6 space-y-2 bg-white rounded-sm dark:bg-slate-700 card-shadow "
         >
           <h3 className="text-5xl font-semibold">{item.text}</h3>
           <p className="text-lg text-center text-slate-600 dark:text-slate-300">

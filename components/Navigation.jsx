@@ -26,7 +26,7 @@ const Navigation = ({ toggleSidebar, openSidebar }) => {
   }
   if (!mounted) return null
   return (
-    <header className="pb-24 lg:pb-40">
+    <header className="pb-24 lg:pb-40 ">
       <nav className="flex items-center p-6 px-3 mx-auto lg:px-6 max-w-7xl">
         <Link href="/">
           <a className="mr-8 text-xl font-bold">JTECH</a>
@@ -44,7 +44,7 @@ const Navigation = ({ toggleSidebar, openSidebar }) => {
         </ul>
         <button
           type="button"
-          className="inline-flex items-center p-2.5  ml-auto mr-5 text-center text-white bg-blue-600 rounded hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-400"
+          className="inline-flex items-center p-2.5  ml-auto mr-5 text-center text-white bg-blue-600 rounded hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-400 overflow-hidden"
           onClick={handleTheme}
         >
           {theme === 'light' ? (
