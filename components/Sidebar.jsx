@@ -18,18 +18,9 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
     <>
       <AnimatePresence>
         {openSidebar && (
-          <motion.div
-            className="fixed top-0 left-0 w-full min-h-screen bg-slate-400 bg-opacity-40 overlay"
+          <div
+            className="fixed top-0 left-0 w-full min-h-screen overlay"
             onClick={closeSidebar}
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            exit={{
-              opacity: 0,
-            }}
           >
             <motion.div
               initial={{
@@ -66,7 +57,7 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
                 </button>
               </nav>
             </motion.div>
-          </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </>

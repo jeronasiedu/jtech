@@ -1,6 +1,12 @@
-import React from 'react'
-
+import Image from 'next/image'
+import { SwiperSlide, Swiper } from 'swiper/react'
 const Gallery = () => {
+  const images = [
+    { url: '/images/asset1.jpeg', alt: 'carousel image' },
+    { url: '/images/asset1.jpeg', alt: 'carousel image' },
+    { url: '/images/asset1.jpeg', alt: 'carousel image' },
+    { url: '/images/asset1.jpeg', alt: 'carousel image' },
+  ]
   return (
     <article>
       <div className="flex flex-col items-center justify-center max-w-3xl px-4 py-16 mx-auto space-y-8 ">
@@ -14,6 +20,27 @@ const Gallery = () => {
           expressing themselves
         </p>
       </div>
+      <Swiper
+        slidesPerView={1}
+        grabCursor
+        // loop={true}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          976: {
+            slidesPerView: 3,
+          },
+        }}
+      >
+        <SwiperSlide>
+          {images.map((item, idx) => (
+            <figure key={idx} className="relative">
+              <Image src={item.url} alt={item.alt} />
+            </figure>
+          ))}
+        </SwiperSlide>
+      </Swiper>
     </article>
   )
 }
