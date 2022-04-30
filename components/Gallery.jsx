@@ -57,14 +57,6 @@ const Gallery = () => {
           delay: 2500,
           disableOnInteraction: true,
         }}
-        // breakpoints={{
-        //   768: {
-        //     slidesPerView: 2,
-        //   },
-        //   976: {
-        //     slidesPerView: 3,
-        //   },
-        // }}
       >
         {images.map((item, idx) => (
           <SwiperSlide key={idx}>
@@ -75,9 +67,9 @@ const Gallery = () => {
                   alt={item.alt}
                   layout="fill"
                   objectFit="cover"
-                  className={`${
-                    !isNext ? 'grayscale' : 'grayscale-0'
-                  } transition-all duration-300`}
+                  // className={`${
+                  //   !isNext ? 'grayscale' : 'grayscale-0'
+                  // } transition-all duration-300`}
                   priority
                 />
               </figure>
