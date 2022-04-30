@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  height: 100%;
+}
+body {
+  font-family: 'open sans';
+}
+html.dark body {
+  background-image: linear-gradient(
+    75deg,
+    hsl(240deg 10% 4%) 0%,
+    hsl(240deg 12% 5%) 20%,
+    hsl(228deg 16% 6%) 36%,
+    hsl(231deg 19% 7%) 49%,
+    hsl(233deg 19% 8%) 61%,
+    hsl(234deg 21% 9%) 72%,
+    hsl(235deg 22% 11%) 81%,
+    hsl(236deg 25% 12%) 89%,
+    hsl(237deg 27% 13%) 96%,
+    hsl(234deg 30% 14%) 100%
+  );
+}
+/* CUSTOM TAILWIND */
+
+.link {
+  position: relative;
+}
+html.dark .link::after {
+  background: #fff;
+}
+.link::after {
+  content: '';
+  position: absolute;
+  background: #4b5563;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.link:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+.custom-shadow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
