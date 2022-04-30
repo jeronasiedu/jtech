@@ -7,12 +7,10 @@ const Layout = ({ children }) => {
   const [openSidebar, setOpenSidebar] = useState(false)
   const [mounted, setMounted] = useState(false)
 
-  const toggleSidebar = () => {
+  const toggleSidebar = (e) => {
     setOpenSidebar((prev) => !prev)
   }
-  const closeSidebar = () => {
-    setOpenSidebar(false)
-  }
+
   useEffect(() => {
     setMounted(true)
   }, [])
@@ -27,7 +25,7 @@ const Layout = ({ children }) => {
     <>
       <Navigation toggleSidebar={toggleSidebar} openSidebar={openSidebar} />
       <motion.main>{children}</motion.main>
-      <Sidebar openSidebar={openSidebar} closeSidebar={closeSidebar} />
+      <Sidebar openSidebar={openSidebar} setOpenSidebar={setOpenSidebar} />
       {/* <Footer /> */}
     </>
   )

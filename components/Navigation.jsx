@@ -19,11 +19,7 @@ const Navigation = ({ toggleSidebar, openSidebar }) => {
   useEffect(() => {
     setMounted(true)
   }, [])
-  if (mounted) {
-    document.addEventListener('keyup', (e) => {
-      console.log(e.keyCode)
-    })
-  }
+
   if (!mounted) return null
   return (
     <header className="pb-24 lg:pb-40 ">
