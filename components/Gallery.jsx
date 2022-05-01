@@ -72,6 +72,8 @@ const Gallery = () => {
                   //   !isNext ? 'grayscale' : 'grayscale-0'
                   // } transition-all duration-300`}
                   priority
+                  placeholder="blur"
+                  blurDataURL={item.url}
                 />
               </figure>
             )}
