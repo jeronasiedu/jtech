@@ -18,48 +18,29 @@ const Achievements = () => {
       desc: 'International awards',
     },
   ]
-  const sectionVariant = {
-    initial: {
-      opacity: 0,
-      y: 50,
-    },
-    animate: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        staggerChildren: 0.3,
-        duration: 1.2,
-      },
-    },
-  }
+
   const cardVariant = {
     initial: {
-      opacity: 0,
-      y: 100,
+      y: -40,
     },
     animate: (idx) => ({
-      opacity: 1,
       y: 0,
       transition: {
-        delay: idx * 0.3,
-        duration: 1,
+        delay: idx * 0.2,
+        type: 'spring',
+        stiffness: 150,
       },
     }),
   }
   return (
-    <motion.section
-      variants={sectionVariant}
-      initial="initial"
-      whileInView="animate"
-      className="grid grid-cols-2 gap-4 px-3 pb-16 mx-auto lg:gap-6 lg:grid-cols-4 max-w-7xl"
-    >
+    <motion.section className="grid grid-cols-2 gap-4 px-3 pb-16 mx-auto lg:gap-6 lg:grid-cols-4 max-w-7xl">
       {achieve.map((item, idx) => (
         <motion.div
           key={idx}
           variants={cardVariant}
           initial="initial"
           custom={idx}
-          animate="animate"
+          whileInView="animate"
           className="flex flex-col items-center justify-center py-6 space-y-2 bg-white rounded-sm dark:bg-slate-700 card-shadow "
         >
           <h3 className="text-5xl font-semibold">{item.text}</h3>

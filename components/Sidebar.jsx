@@ -18,7 +18,7 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
     <>
       <AnimatePresence>
         {openSidebar && (
-          <div
+          <aside
             className="fixed top-0 left-0 w-full min-h-screen overlay"
             onClick={closeSidebar}
           >
@@ -57,7 +57,7 @@ const Sidebar = ({ openSidebar, setOpenSidebar }) => {
                 </button>
               </nav>
             </motion.div>
-          </div>
+          </aside>
         )}
       </AnimatePresence>
     </>

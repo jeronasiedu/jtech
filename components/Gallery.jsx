@@ -82,13 +82,13 @@ const Gallery = () => {
       </Swiper>
       <div className="container flex items-center justify-between px-6 mx-auto mt-8">
         <button
-          className="p-4 transition-colors duration-300 bg-blue-500 rounded-sm cursor-pointer focus:ring focus:ring-blue-400 focus:outline-none dark:bg-slate-700 dark:hover:bg-slate-500"
+          className="p-4 transition-colors duration-300 bg-blue-500 rounded-sm cursor-pointer focus:ring focus:ring-blue-400 focus:outline-none dark:bg-slate-700 dark:hover:bg-slate-500 hover:bg-blue-300"
           onClick={handlePrev}
         >
           <BiLeftArrow size={20} className="text-white " />
         </button>
         <button
-          className="p-4 transition-colors duration-300 bg-blue-500 rounded-sm cursor-pointer focus:ring focus:ring-blue-400 focus:outline-none dark:bg-slate-700 dark:hover:bg-slate-500"
+          className="p-4 transition-colors duration-300 bg-blue-500 rounded-sm cursor-pointer focus:ring focus:ring-blue-400 focus:outline-none dark:bg-slate-700 dark:hover:bg-slate-500 hover:bg-blue-300"
           onClick={handleNext}
         >
           <BiRightArrow size={20} className="text-white " />
