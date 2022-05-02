@@ -38,6 +38,8 @@ const Audience = () => {
               objectFit="cover"
               width={540}
               height={520}
+              placeholder="blur"
+              blurDataURL="/images/asset6.png"
             />
           </div>
           <div className="flex-1 space-y-6">
