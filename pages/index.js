@@ -1,4 +1,4 @@
-import { Achievements, Hero, Gallery, Reality } from '../components'
+import { Achievements, Hero, Gallery, Reality, Audience } from '../components'
 import Head from 'next/head'
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <Achievements />
       <Gallery />
       <Reality />
+      <Audience />
     </>
   )
 }

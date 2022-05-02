@@ -19,7 +19,7 @@ html.dark body {
     hsl(235deg 22% 11%) 81%,
     hsl(236deg 25% 12%) 89%,
     hsl(237deg 27% 13%) 96%,
-    hsl(234deg 30% 14%) 100%
+    hsl(234, 30%, 14%) 100%
   );
 }
 /* CUSTOM TAILWIND */
@@ -52,4 +52,29 @@ html.dark .link::after {
 }
 .card-shadow {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+/* Shape Divider */
+.custom-shape-divider-top-1651452485 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1651452485 svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 91px;
+}
+
+.custom-shape-divider-top-1651452485 .shape-fill {
+  fill: #ffffff;
+}
+html.dark .custom-shape-divider-top-1651452485 .shape-fill {
+  fill: none;
 }
