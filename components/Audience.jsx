@@ -42,7 +42,7 @@ const Audience = () => {
               blurDataURL="/images/asset6.png"
             />
           </div>
-          <div className="flex-1 space-y-6">
+          <div className="flex-1 space-y-10">
             {teams.map((item, idx) => (
               <div className="space-y-2 " key={idx}>
                 <h2 className="text-3xl font-semibold ">
