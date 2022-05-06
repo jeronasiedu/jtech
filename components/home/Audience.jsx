@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Divider from './Divider'
 const Audience = () => {
   const teams = [
@@ -55,6 +56,20 @@ const Audience = () => {
             ))}
           </div>
         </div>
+        <article className="flex flex-col justify-between px-8 py-8 space-y-8 rounded md:flex-row md:py-12 custom-shadow md:items-center">
+          <div className="space-y-2">
+            <h4 className="text-3xl ">Ready to get Started?</h4>
+            <p className="text-lg text-gray-700 md:max-w-sm lg:max-w-none">
+              We have a generous free tier available to get you started right
+              away.
+            </p>
+          </div>
+          <Link href="/">
+            <a className="flex-shrink-0 text-xl text-center link-btn">
+              Get In Touch
+            </a>
+          </Link>
+        </article>
       </div>
     </section>
   )

@@ -124,9 +124,7 @@ const Navigation = ({ toggleSidebar, openSidebar }) => {
           )}
         </button>
         <Link href="/">
-          <a className="hidden py-2 font-medium text-white transition-colors duration-300 bg-blue-600 border-2 border-blue-600 rounded px-7 hover:text-light_p hover:bg-transparent focus:outline-none focus:ring-4 focus:ring-blue-400 dark:hover:text-white lg:inline-block">
-            Get In Touch
-          </a>
+          <a className="btn">Get In Touch</a>
         </Link>
       </nav>
     </header>

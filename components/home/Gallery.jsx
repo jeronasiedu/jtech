@@ -3,7 +3,7 @@ import { useRef, useCallback } from 'react'
 import { SwiperSlide, Swiper } from 'swiper/react'
 import { Autoplay } from 'swiper'
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi'
-import { useMediaQuery } from '../utils/hooks'
+import { useMediaQuery } from '../../utils/hooks'
 const Gallery = () => {
   const images = [
     { url: '/images/asset1.jpeg', alt: 'carousel image' },

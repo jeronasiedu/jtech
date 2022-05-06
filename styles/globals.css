@@ -78,3 +78,11 @@ html.dark .link::after {
 html.dark .custom-shape-divider-top-1651452485 .shape-fill {
   fill: none;
 }
+@layer components {
+  .btn {
+    @apply hidden py-2 font-medium text-white transition-colors duration-300 bg-blue-600 border-2 border-blue-600 rounded px-7 hover:text-light_p hover:bg-transparent focus:outline-none focus:ring-4 focus:ring-blue-400 dark:hover:text-white lg:inline-block;
+  }
+  .link-btn {
+    @apply py-2 font-medium text-white transition-colors duration-300 bg-blue-600 border-2 border-blue-600 rounded px-7 hover:text-light_p hover:bg-transparent focus:outline-none focus:ring-4 focus:ring-blue-400 dark:hover:text-white;
+  }
+}
