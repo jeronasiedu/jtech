@@ -31,7 +31,7 @@ const Footer = () => {
     { icon: <BsFacebook size={20} />, url: '/' },
   ]
   return (
-    <footer className="px-4 py-16 mx-auto space-y-8 max-w-7xl">
+    <footer className="px-4 pt-16 pb-4 mx-auto space-y-8 max-w-7xl">
       <div className="flex flex-col space-y-6 lg:space-y-0 lg:flex-row md:justify-between">
         <div className="">
           <h3 className="mb-2 text-2xl">JTECH</h3>
