@@ -74,6 +74,7 @@ const Gallery = () => {
                   priority
                   placeholder="blur"
                   blurDataURL={item.url}
+                  className="transition-transform duration-700 hover:scale-110"
                 />
               </figure>
             )}

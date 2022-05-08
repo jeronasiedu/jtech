@@ -94,7 +94,7 @@ const Hero = () => {
       </div>
       <div className="flex-1">
         <motion.div
-          className="relative w-full h-60 md:h-[30rem] lg:h-80"
+          className="relative w-full h-60 md:h-[30rem] lg:h-96"
           variants={animateVariant}
           initial="initial"
           whileInView="animate"

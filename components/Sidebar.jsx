@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useClickOutside } from '../utils/hooks'
 const Sidebar = ({ openSidebar, setOpenSidebar }) => {
   const links = [
-    { title: 'About', url: '/' },
+    { title: 'About', url: '/about' },
     { title: 'Blog', url: '/' },
     { title: 'Testimonials', url: '/' },
   ]
