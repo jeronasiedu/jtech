@@ -58,8 +58,8 @@ const Audience = () => {
         </div>
         <article className="flex flex-col justify-between px-8 py-8 space-y-8 rounded md:flex-row md:py-12 custom-shadow md:items-center dark:bg-slate-700">
           <div className="space-y-2">
-            <h4 className="text-3xl ">Ready to get Started?</h4>
-            <p className="text-lg text-gray-700 md:max-w-sm lg:max-w-none dark:text-slate-300">
+            <h4 className="text-2xl md:text-3xl ">Ready to get Started?</h4>
+            <p className="text-base text-gray-700 md:max-w-sm lg:max-w-none dark:text-slate-300">
               We have a generous free tier available to get you started right
               away.
             </p>
