@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
       <Navigation toggleSidebar={toggleSidebar} openSidebar={openSidebar} />
       <motion.main>{children}</motion.main>
       <Sidebar openSidebar={openSidebar} setOpenSidebar={setOpenSidebar} />
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
