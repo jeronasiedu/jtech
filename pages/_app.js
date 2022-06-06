@@ -4,6 +4,7 @@ import NextNProgress from 'nextjs-progressbar'
 import Layout from '../components/Layout'
 import 'swiper/css'
 import 'swiper/css/navigation'
+import 'aos/dist/aos.css'
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">

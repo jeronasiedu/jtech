@@ -5,11 +5,20 @@ const Reality = () => {
   return (
     <section className="px-4 pb-16 mx-auto space-y-6 max-w-7xl">
       <div className="max-w-3xl px-4 mx-auto space-y-8">
-        <h2 className="text-4xl font-bold text-center md:text-5xl lg:text-6xl">
+        <h2
+          className="text-4xl font-bold text-center md:text-5xl lg:text-6xl"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+        >
           Turn your ideas into reality in{' '}
           <span className="text-blue-600">seconds</span>
         </h2>
-        <p className="text-xl text-center text-gray-700 dark:text-slate-300">
+        <p
+          className="text-xl text-center text-gray-700 dark:text-slate-300"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           At JTECH, we produced top notch quality products at the fastest time
           possible. We have professional developers making every single second
           count.{' '}

@@ -22,7 +22,7 @@ const Navigation = ({ toggleSidebar, openSidebar }) => {
 
   if (!mounted) return null
   return (
-    <header className="pb-24 lg:pb-36 ">
+    <header className="pb-20 lg:pb-28 ">
       <nav className="flex items-center p-6 px-3 mx-auto lg:px-6 max-w-7xl">
         <Link href="/">
           <a className="mr-8 text-xl font-bold">JTECH</a>
