@@ -1,10 +1,41 @@
 import Image from 'next/image'
-import React from 'react'
-
 const Story = () => {
+  const images = [
+    {
+      src: '/images/asset7.jpeg',
+      alt: 'some image bi',
+      width: 360,
+    },
+    {
+      src: '/images/asset8.jpeg',
+      alt: 'some image bi',
+      width: 270,
+    },
+    {
+      src: '/images/asset9.jpeg',
+      alt: 'some image bi',
+      width: 450,
+    },
+
+    {
+      src: '/images/asset10.jpeg',
+      alt: 'some image bi',
+      width: 270,
+    },
+    {
+      src: '/images/asset11.jpeg',
+      alt: 'some image bi',
+      width: 450,
+    },
+    {
+      src: '/images/asset12.jpeg',
+      alt: 'some image bi',
+      width: 360,
+    },
+  ]
   return (
     <section className="min-h-screen px-2 mx-auto max-w-7xl">
-      <div className="space-y-4 text-center">
+      <div className="mb-16 space-y-4 text-center">
         <h2
           className="text-4xl font-medium text-center md:text-5xl lg:text-6xl"
           data-aos="fade-zoom-in"
@@ -26,16 +57,21 @@ const Story = () => {
         </p>
       </div>
       <div>
-        {/* <Image
-          src="/images/about-hero.jpg"
-          alt="About image"
-          width={780}
-          height={480}
-          objectFit="cover"
-          placeholder="blur"
-          blurDataURL="/images/about-hero.jpg"
-          className="mask"
-        /> */}
+        <div className="grid grid-cols-3 gap-2 md:gap-3 lg:gap-4">
+          {images.map((image, idx) => (
+            <Image
+              src={image.src}
+              alt="some image"
+              height={270}
+              width={image.width}
+              objectFit="cover"
+              placeholder="blur"
+              blurDataURL={image.src}
+              key={idx}
+              className="rounded-sm"
+            />
+          ))}
+        </div>
       </div>
     </section>
   )

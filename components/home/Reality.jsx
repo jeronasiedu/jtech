@@ -9,6 +9,7 @@ const Reality = () => {
           className="text-4xl font-bold text-center md:text-5xl lg:text-6xl"
           data-aos="fade-up"
           data-aos-duration="1100"
+          data-aos-offset="100"
         >
           Turn your ideas into reality in{' '}
           <span className="text-blue-600">seconds</span>
@@ -18,6 +19,7 @@ const Reality = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
+          data-aos-offset="100"
         >
           At JTECH, we produced top notch quality products at the fastest time
           possible. We have professional developers making every single second
