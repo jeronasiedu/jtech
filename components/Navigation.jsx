@@ -1,9 +1,9 @@
-import Link from 'next/link'
-import { useTheme } from 'next-themes'
 import { AnimatePresence, motion } from 'framer-motion'
-import { useState, useEffect } from 'react'
-import { BiMoon, BiSun, BiMenu } from 'react-icons/bi'
+import { useTheme } from 'next-themes'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
+import { BiMenu, BiMoon, BiSun } from 'react-icons/bi'
 
 const links = [
   { title: 'About', url: '/about' },

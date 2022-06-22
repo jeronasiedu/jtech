@@ -34,10 +34,10 @@ const Story = () => {
     },
   ]
   return (
-    <section className="min-h-screen px-2 mx-auto max-w-7xl">
+    <section className="px-2 mx-auto max-w-7xl">
       <div className="mb-16 space-y-4 text-center">
         <h2
-          className="text-4xl font-medium text-center md:text-5xl lg:text-6xl"
+          className="text-4xl font-medium md:text-5xl lg:text-6xl"
           data-aos="fade-zoom-in"
           data-aos-duration="1200"
           data-aos-easing="ease-in-out-back"
