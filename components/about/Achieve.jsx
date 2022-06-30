@@ -1,9 +1,8 @@
-import { useState } from 'react'
+import {useState} from 'react'
 
 const Achievements = () => {
-  const tabHeadings = ['2022', '2021', '2020', '2021']
+  const tabHeadings = ['2022', '2021', '2020', '2019']
   const [activeIndex, setActiveIndex] = useState(0)
-  console.log(activeIndex)
   return (
     <section className="px-2 py-16 mx-auto max-w-7xl">
       <div className="mb-16 space-y-4 text-center">
@@ -16,7 +15,6 @@ const Achievements = () => {
         </p>
       </div>
       <div className="">
-        {/* tab heading */}
         <ul className="flex items-center justify-around px-2 md:space-x-5 md:justify-center dark:text-gray-100">
           {tabHeadings.map((heading, index) => (
             <Tabs
