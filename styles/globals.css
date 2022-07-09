@@ -87,15 +87,3 @@ html.dark .custom-shape-divider-top-1651452485 .shape-fill {
     @apply py-2 font-medium text-white transition-colors duration-300 bg-blue-600 border-2 border-blue-600 rounded px-7 hover:text-light_p hover:bg-transparent focus:outline-none focus:ring-4 focus:ring-blue-400 dark:hover:text-white;
   }
 }
-/* .mask {
-  -webkit-mask-image: linear-gradient(
-      45deg,
-      #000000 25%,
-      rgba(0, 0, 0, 0.2) 25%
-    ),
-    linear-gradient(-45deg, #000000 25%, rgba(0, 0, 0, 0.2) 25%),
-    linear-gradient(45deg, rgba(0, 0, 0, 0.2) 75%, #000000 75%),
-    linear-gradient(-45deg, rgba(0, 0, 0, 0.2) 75%, #000000 75%);
-  -webkit-mask-size: 20px 20px;
-  -webkit-mask-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-} */
